@@ -1,0 +1,103 @@
+filetype plugin indent on
+set backspace=indent,eol,start
+set wildmenu
+set showmatch
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+
+hi Search cterm=NONE ctermfg=white ctermbg=yellow
+set incsearch
+set autoindent
+set ignorecase
+set laststatus=2
+set scrolloff=10
+set nohlsearch
+
+set path+=**
+set nocompatible
+set number
+set relativenumber
+set softtabstop=3
+set shiftwidth=3
+set tabstop=3
+set scrolloff=8
+set scrolljump=0                " Lines to scroll when cursor leaves screen
+set cursorline
+autocmd BufEnter * set mouse=
+
+" IndentGuides settings
+let indent_guides_auto_colors = 0
+hi IndentGuidesOdd  guibg=darkgrey ctermbg=237
+hi IndentGuidesEven guibg=darkgrey ctermbg=237
+let indent_guides_guide_size = 1
+au VimEnter * IndentGuidesEnable
+
+" Strip whitespace {
+function! StripTrailingWhitespace()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " do the business:
+    %s/\s\+$//e
+    " clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+" }
+
+" Custom key-bindings
+let mapleader = ','
+map <Leader>pt          :set invpaste<CR>
+nmap //                 <leader>ci
+nmap =                  G
+nmap -                  gg
+nmap ''                 :TagbarToggle<CR>
+nmap f                  :find<space>
+nmap t                  :tabnew<CR>:find<space>
+nmap <leader><left>     :tabprevious<CR>
+nmap <leader><right>    :tabnext<CR>
+nmap <leader>x          :call StripTrailingWhitespace()<CR>
+nmap <leader><Enter>    o<Esc>k
+nmap <leader>dl         d$
+nmap <silent><leader>/  :set invhlsearch<CR>
+
+vnoremap < <gv
+vnoremap > >gv
+
+vnoremap <up> gk
+vnoremap <down> gj
+nmap <down> gj
+nmap <up> gk
+
+vnoremap h gh
+vnoremap l gl
+vnoremap j gj
+vnoremap k gk
+nmap h gh
+nmap l gl
+nmap j gj
+nmap k gk
+
+" easy-motin mappings
+map <Leader><Leader>l <Plug>(easymotion-lineforward)
+map <Leader><Leader>j <Plug>(easymotion-j)
+map <Leader><Leader>k <Plug>(easymotion-k)
+map <Leader><Leader>h <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+let g:EasyMotion_smartcase = 1
+
+" ================ Searches ============================
+set incsearch      " do incremental searching
+set hlsearch        " Highlight searches by default
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
