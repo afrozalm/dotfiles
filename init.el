@@ -3,7 +3,6 @@
 ;;; Code:
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
-(display-battery-mode 1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
@@ -40,6 +39,12 @@
           (hs-show-all))
     (toggle-selective-display column)))
 (global-set-key (kbd "C-a") 'toggle-hiding)
+
+
+;; py-autopep8
+(require 'py-autopep8)
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+(setq py-autopep8-options '("--max-line-length=94"))
 
 
 ;; Flymake-Lua
