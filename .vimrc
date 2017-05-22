@@ -8,7 +8,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'freeo/vim-kalisi'
 Plug 'dietsche/vim-lastplace'
 Plug 'anyakichi/vim-surround'
-Plug 'valloric/youcompleteme'
 
 call plug#end()
 
