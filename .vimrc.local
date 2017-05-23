@@ -55,8 +55,8 @@ nmap -                  gg
 nmap ''                 :TagbarToggle<CR>
 nmap f                  :find<space>
 nmap t                  :tabnew<CR>:find<space>
-nmap <leader><left>     :tabprevious<CR>
-nmap <leader><right>    :tabnext<CR>
+nmap J                  :tabprevious<CR>
+nmap K                  :tabnext<CR>
 nmap <leader>x          :call StripTrailingWhitespace()<CR>
 nmap <leader><Enter>    o<Esc>k
 nmap <leader>dl         d$
