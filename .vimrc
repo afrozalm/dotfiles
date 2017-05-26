@@ -10,6 +10,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'freeo/vim-kalisi'
 Plug 'dietsche/vim-lastplace'
 Plug 'chun-yang/auto-pairs'
+Plug 'gioele/vim-autoswap'
 
 call plug#end()
 
