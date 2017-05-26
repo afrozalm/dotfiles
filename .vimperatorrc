@@ -86,6 +86,8 @@ noremap <C-h> gT
 noremap <C-l> gt
 noremap <C-left> :tabprevious<CR>
 noremap <C-right> :tabnext <CR>
+noremap J :tabprevious<CR>
+noremap K :tabnext<CR>
 
 " searching {{{2
 noremap <Leader>/ :nohlsearch<CR>

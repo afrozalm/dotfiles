@@ -48,15 +48,15 @@ endfunction
 
 " Custom key-bindings
 let mapleader = ','
-map <Leader>pt          :set invpaste<CR>
+map <Leader>pt          :set invpaste<CR>i
 nmap //                 <leader>ci
 nmap =                  G
 nmap -                  gg
 nmap ''                 :TagbarToggle<CR>
 nmap f                  :find<space>
 nmap t                  :tabnew<CR>:find<space>
-nmap <leader><left>     :tabprevious<CR>
-nmap <leader><right>    :tabnext<CR>
+nmap J                  :tabprevious<CR>
+nmap K                  :tabnext<CR>
 nmap <leader>x          :call StripTrailingWhitespace()<CR>
 nmap <leader><Enter>    o<Esc>k
 nmap <leader>dl         d$
@@ -69,15 +69,6 @@ vnoremap <up> gk
 vnoremap <down> gj
 nmap <down> gj
 nmap <up> gk
-
-vnoremap h gh
-vnoremap l gl
-vnoremap j gj
-vnoremap k gk
-nmap h gh
-nmap l gl
-nmap j gj
-nmap k gk
 
 " easy-motin mappings
 map <Leader><Leader>l <Plug>(easymotion-lineforward)
