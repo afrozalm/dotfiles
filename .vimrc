@@ -9,7 +9,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'freeo/vim-kalisi'
 Plug 'dietsche/vim-lastplace'
-Plug 'anyakichi/vim-surround'
+Plug 'chun-yang/auto-pairs'
 
 call plug#end()
 
