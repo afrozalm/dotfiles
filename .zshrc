@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/afrozalm/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -101,11 +101,5 @@ source $ZSH/oh-my-zsh.sh
  export XLIB_SKIP_ARGB_VISUALS=1
  export LESS='-R'
  export LESSOPEN='|~/.lessfilter %s'
- export PYTHONPATH="${PYTHONPATH}:/home/afrozalm/Project/gym"
- export PYTHONPATH="${PYTHONPATH}:/home/afrozalm/Project/universe"
- export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib/gtk-3.0/modules"
 
  [ -e $HOME/.zsh/notifyosd.zsh  ] && . $HOME/.zsh/notifyosd.zsh
-
-
-. /home/afrozalm/torch/install/bin/torch-activate
