@@ -83,20 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- alias gch="git checkout"
- alias gpush="git push"
- alias gdiff="git diff"
- alias gpull="git pull"
- alias gstat="git status"
- alias gcm="git commit -m"
- alias gmerge="git merge"
- alias gadd='git add'
-
- alias txl='tmux ls'
- alias txa='tmux attach -t'
- alias txn='tmux new -s'
- alias txk='tmux kill-session -t'
- #alias emacs="XLIB_SKIP_ARGB_VISUALS=1 emacsclient -c"
 
  export XLIB_SKIP_ARGB_VISUALS=1
  export LESS='-R'
