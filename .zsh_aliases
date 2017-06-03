@@ -1,0 +1,15 @@
+# git aliases
+alias gch="git checkout"
+alias gpush="git push"
+alias gdiff="git diff"
+alias gpull="git pull"
+alias gstat="git status"
+alias gcm="git commit -m"
+alias gmerge="git merge"
+alias gadd='git add'
+
+# tmux aliases
+alias txl='tmux ls'
+alias txa='tmux attach -t'
+alias txn='tmux new -s'
+alias txk='tmux kill-session -t'
