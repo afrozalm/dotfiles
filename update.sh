@@ -1,14 +1,19 @@
 #!/bin/bash
+MSG=$'Usage: ./update.sh <-option_id or --option> [<-option_id or --option> ...]
+
+Option ids and options:
+-v  | --vim   : update vimrc
+-e  | --emacs : update init.el
+-z  | --zsh   : update .zshrc
+-t  | --tmux  : update .tmux.conf
+-a  | --agnoster : update agnosterAfroLight theme
+-za | --zathura  : update zathurarc
+-vp | --vimp     : update vimperatorrc
+-zn | --znotif   : update notifyosd
+-zal | --zaliases : update .zsh_aliases'
+
 if [ $# -eq 0 ]; then
-   echo "Options to update:"
-   echo "-v  | --vim   : update vimrc"
-   echo "-e  | --emacs : update init.el"
-   echo "-z  | --zsh   : update .zshrc"
-   echo "-t  | --tmux  : update .tmux.conf"
-   echo "-a  | --agnoster : update agnosterAfroLight theme"
-   echo "-za | --zathura  : update zathurarc"
-   echo "-vp | --vimp     : update vimperatorrc"
-   echo "-zn | --znotif   : update notifyosd"
+   echo "$MSG"
 fi
 
 for i in "$@"
@@ -56,16 +61,13 @@ case $i in
    echo "notifyosd updated"
    shift # past argument=value
    ;;
+   -zal|--zaliases)
+   cp .zsh_aliases ~/     # zsh aliases -zal|--zaliases
+   echo "zsh_aliases updated"
+   shift # past argument=value
+   ;;
    -h|--help|*)
-   echo "Options to update:"
-   echo "-v  | --vim   : update vimrc"
-   echo "-e  | --emacs : update init.el"
-   echo "-z  | --zsh   : update .zshrc"
-   echo "-t  | --tmux  : update .tmux.conf"
-   echo "-a  | --agnoster : update agnosterAfroLight theme"
-   echo "-za | --zathura  : update zathurarc"
-   echo "-vp | --vimp     : update vimperatorrc"
-   echo "-zn | --znotif   : update notifyosd"
+   echo "$MSG"
            # help or unknown option
    ;;
 esac
