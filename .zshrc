@@ -54,6 +54,7 @@ ZSH_THEME="agnosterAfroLight"
 plugins=(git pantheon-terminal-notify-zsh-plugin autojump sudo)  ## add to plugins list
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh_aliases
 
 # User configuration
 
