@@ -17,9 +17,9 @@ set path+=**
 set nocompatible
 set number
 set relativenumber
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=3
+set shiftwidth=3
+set tabstop=3
 set scrolloff=8
 set scrolljump=0                " Lines to scroll when cursor leaves screen
 set cursorline
@@ -117,9 +117,9 @@ au BufNewFile,BufRead *.py set autoindent
 au BufNewFile,BufRead *.py set fileformat=unix
 
 " For lua files
-au BufNewFile,BufRead *.lua set tabstop=2
-au BufNewFile,BufRead *.lua set softtabstop=2
-au BufNewFile,BufRead *.lua set shiftwidth=2
+au BufNewFile,BufRead *.lua set tabstop=3
+au BufNewFile,BufRead *.lua set softtabstop=3
+au BufNewFile,BufRead *.lua set shiftwidth=3
 au BufNewFile,BufRead *.lua set expandtab
 au BufNewFile,BufRead *.lua set autoindent
 au BufNewFile,BufRead *.lua set fileformat=unix
