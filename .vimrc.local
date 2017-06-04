@@ -17,9 +17,9 @@ set path+=**
 set nocompatible
 set number
 set relativenumber
-set softtabstop=3
-set shiftwidth=3
-set tabstop=3
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
 set scrolloff=8
 set scrolljump=0                " Lines to scroll when cursor leaves screen
 set cursorline
@@ -107,3 +107,19 @@ omap / <Plug>(easymotion-tn)
 " different highlight method and have some other features )
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+" For python files
+au BufNewFile,BufRead *.py set tabstop=4
+au BufNewFile,BufRead *.py set softtabstop=4
+au BufNewFile,BufRead *.py set shiftwidth=4
+au BufNewFile,BufRead *.py set expandtab
+au BufNewFile,BufRead *.py set autoindent
+au BufNewFile,BufRead *.py set fileformat=unix
+
+" For lua files
+au BufNewFile,BufRead *.lua set tabstop=2
+au BufNewFile,BufRead *.lua set softtabstop=2
+au BufNewFile,BufRead *.lua set shiftwidth=2
+au BufNewFile,BufRead *.lua set expandtab
+au BufNewFile,BufRead *.lua set autoindent
+au BufNewFile,BufRead *.lua set fileformat=unix
