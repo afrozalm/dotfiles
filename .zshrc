@@ -55,6 +55,7 @@ plugins=(git pantheon-terminal-notify-zsh-plugin autojump sudo)  ## add to plugi
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_aliases
+source $HOME/.zshrc.local
 
 # User configuration
 
