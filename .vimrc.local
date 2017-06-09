@@ -23,6 +23,8 @@ set tabstop=3
 set scrolloff=8
 set scrolljump=0                " Lines to scroll when cursor leaves screen
 set cursorline
+set foldmethod=manual
+set foldnestmax=2
 autocmd BufEnter * set mouse=
 
 " IndentGuides settings
@@ -91,6 +93,10 @@ map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><Leader>h <Plug>(easymotion-linebackward)
 
+" for code folding
+nnoremap <space> za
+vnoremap <space> zf
+
 let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 let g:EasyMotion_smartcase = 1
 
@@ -115,6 +121,7 @@ au BufNewFile,BufRead *.py set shiftwidth=4
 au BufNewFile,BufRead *.py set expandtab
 au BufNewFile,BufRead *.py set autoindent
 au BufNewFile,BufRead *.py set fileformat=unix
+au BufNewFile,BufRead *.py set foldmethod=indent
 
 " For lua files
 au BufNewFile,BufRead *.lua set tabstop=3
