@@ -28,5 +28,6 @@ let g:airline_theme="base16"
 syntax on
 set autoread
 set number
+hi MatchParen ctermbg=239 ctermfg=112 cterm=bold
 
 source ~/.vimrc.local
