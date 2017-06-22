@@ -15,8 +15,6 @@ Plug 'gioele/vim-autoswap'
 call plug#end()
 
 set expandtab
-set shiftwidth=4
-set softtabstop=4
 let g:rainbow_active = 1
 colorscheme kalisi
 set background=dark
