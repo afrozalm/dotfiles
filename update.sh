@@ -43,7 +43,7 @@ case $i in
    ;;
    -a|--agnoster)
    [ -d "$HOME/.oh-my-zsh/themes" ] && cp agnosterAfroLight.zsh-theme ~/.oh-my-zsh/themes/ || echo "$HOME/.oh-my-zsh/themes does not exist"   # agnoster -a|--agnoster
-   "agnosterAfroLight theme updated"
+   echo "agnosterAfroLight theme updated"
    shift # past argument=value
    ;;
    -za|--zathura)
