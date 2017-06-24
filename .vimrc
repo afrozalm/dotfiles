@@ -11,6 +11,7 @@ Plug 'freeo/vim-kalisi'
 Plug 'dietsche/vim-lastplace'
 Plug 'chun-yang/auto-pairs'
 Plug 'gioele/vim-autoswap'
+Plug 'klen/python-mode'
 
 call plug#end()
 
