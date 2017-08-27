@@ -18,15 +18,40 @@ Running the command `./update.sh -a` to copy the agnosterAfroLight theme to your
 ### Zsh
 Add the local zshrc changes in `.zshrc.local`
 
+#### Plugins Used:
+* [autojump](https://github.com/wting/autojump)
+* sudo: double press esc key to add a `sudo` in-front of any command.
+
+#### Aliases
+* Tmux
+  * `txa <sess-name>` to attach to `sess-name`
+  * `txn <sess-name>` to create a session named `sess-name`
+  * `txl` to `ls` all tmux sessions
+  * `txk <sess-name>` to kill a session
+* Git
+  * `gcl` for `git clone`
+  * `gpush` for `git push`
+  * `gpull` for `git pull`
+  * `gcm` for `git commit -m`
+  * `gadd` for `git add`
+  * `gdiff` for `git diff`
+  * `gch` for `git checkout`
+  * `gstat` for `git status`
+  * `gmerge` for `git merge`
+ 
 ### Vim
 Run the command `./update.sh -v`. Run the command `:PlugInstall` in vim to install all the necessary plugins.
+
+#### Plugins used:
+* [nerdtree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim.
+* [nerdcomenter](https://github.com/scrooloose/nerdcommenter): Vim plugin for intensely orgasmic commenting.
+* [easy-motion](https://github.com/easymotion/vim-easymotion): Vim motions on speed! 
+* [vim-lastplace](https://github.com/farmergreg/vim-lastplace): Intelligently reopen files at your last edit position in Vim.
 
 ### Emacs
 
 ### Tmux
-
-### Zathura
-
+Tmux with solarized theme and emacs-like key bindings
 
 ## Contact
 
