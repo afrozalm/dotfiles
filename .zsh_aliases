@@ -13,3 +13,6 @@ alias txl='tmux ls'
 alias txa='tmux attach -t'
 alias txn='tmux new -s'
 alias txk='tmux kill-session -t'
+
+# tar
+alias untar='tar -zxvf'
