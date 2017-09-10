@@ -16,3 +16,6 @@ alias txk='tmux kill-session -t'
 
 # tar
 alias untar='tar -zxvf'
+
+# rm
+alias rmtex='rm *aux *xmk *fls *log *out'
