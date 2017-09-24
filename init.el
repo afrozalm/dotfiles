@@ -24,6 +24,12 @@
 (require 'indent-guide)
 (require 'flymake-python-pyflakes)
 
+
+;; kbd for yasnippet
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+
 ;; Ace-window
 (global-set-key (kbd "C-x w") 'ace-window)
 
