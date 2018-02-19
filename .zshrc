@@ -51,7 +51,7 @@ ZSH_THEME="agnosterAfroLight"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pantheon-terminal-notify-zsh-plugin autojump sudo)  ## add to plugins list
+plugins=(git autojump sudo)  ## add to plugins list
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_aliases
@@ -89,5 +89,3 @@ source $HOME/.zshrc.local
  export XLIB_SKIP_ARGB_VISUALS=1
  export LESS='-R'
  export LESSOPEN='|~/.lessfilter %s'
-
- [ -e $HOME/.zsh/notifyosd.zsh  ] && . $HOME/.zsh/notifyosd.zsh
