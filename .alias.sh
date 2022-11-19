@@ -12,3 +12,9 @@ alias gdiff="git diff"
 alias gstat="git status"
 alias gpull="git pull"
 alias gpush="git push"
+
+# tar
+alias untar='tar -zxvf'
+
+# bpython shortcut
+alias bpy='bpython'
